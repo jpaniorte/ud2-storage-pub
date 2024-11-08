@@ -10,6 +10,7 @@ class HelloWorldControllerTest extends TestCase
 
     public function testIndex()
     {
+        
         Storage::fake('local');
 
         Storage::disk('local')->put('file1.txt', 'Content 1');
